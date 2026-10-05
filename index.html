@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>StudySprint — The Student System</title>
+<meta name="description" content="StudySprint is a simple student system for planning, active recall, exam preparation and responsible AI-assisted studying.">
+<style>
+:root{--ink:#101828;--muted:#667085;--bg:#f8f9fc;--card:#fff;--accent:#635bff;--accent2:#8b7cff;--line:#e4e7ec;--dark:#101828}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Arial;color:var(--ink);background:var(--bg)}
+a{text-decoration:none;color:inherit}.wrap{max-width:1120px;margin:auto;padding:0 24px}
+nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:20px;font-weight:850;letter-spacing:-.6px}.brand span{color:var(--accent)}
+.navlinks{display:flex;gap:26px;color:#475467;font-size:14px}.navcta{padding:11px 16px;background:var(--ink);color:white;border-radius:10px;font-weight:750}
+.hero{padding:74px 0 60px;display:grid;grid-template-columns:1.08fr .92fr;gap:55px;align-items:center}
+.kicker{display:inline-flex;padding:7px 10px;border-radius:99px;background:#eeecff;color:#5147d9;font-size:12px;font-weight:800}
+h1{font-size:clamp(44px,6vw,76px);line-height:.98;letter-spacing:-4px;margin:18px 0}.hero p{font-size:18px;line-height:1.65;color:var(--muted);max-width:650px}
+.actions{display:flex;gap:12px;align-items:center;margin-top:27px;flex-wrap:wrap}.primary{background:var(--accent);color:white;padding:14px 20px;border-radius:11px;font-weight:800}.secondary{border:1px solid var(--line);background:white;padding:14px 20px;border-radius:11px;font-weight:800}
+.price{font-size:28px;font-weight:850;margin-top:22px}.price small{font-size:13px;color:var(--muted);font-weight:500}
+.mock{background:white;border:1px solid var(--line);border-radius:24px;padding:18px;box-shadow:0 24px 70px rgba(16,24,40,.10);transform:rotate(1deg)}.mockbar{height:30px;display:flex;gap:6px;align-items:center}.dot{width:7px;height:7px;border-radius:50%;background:#d0d5dd}.sheet{border:1px solid var(--line);border-radius:16px;padding:22px}.sheet h3{margin:0 0 15px}.check{display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid #eef0f3;font-size:14px}.pill{font-size:11px;padding:5px 8px;background:#f2f4f7;border-radius:8px}
+section{padding:70px 0}h2{font-size:38px;letter-spacing:-1.5px;margin:0 0 12px}.sectionlead{color:var(--muted);font-size:16px;line-height:1.6;max-width:680px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}.card{background:white;border:1px solid var(--line);border-radius:17px;padding:25px}.icon{font-size:25px}.card h3{margin:15px 0 7px}.card p{color:var(--muted);line-height:1.55;margin:0}
+.dark{background:var(--dark);color:white}.dark .sectionlead{color:#98a2b3}.dark .card{background:#182230;border-color:#293548}.dark .card p{color:#aab5c4}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:30px}.step{padding:20px;border:1px solid var(--line);border-radius:15px;background:white}.num{font-weight:900;color:var(--accent)}
+.pricebox{max-width:520px;margin:28px auto 0;background:white;border:1px solid var(--line);border-radius:22px;padding:32px;box-shadow:0 20px 60px rgba(16,24,40,.08)}.pricebig{font-size:44px;font-weight:900}.pricebox li{margin:10px 0;color:#475467}
+.faq{border-top:1px solid var(--line)}details{padding:20px 0;border-bottom:1px solid var(--line)}summary{font-weight:800;cursor:pointer}details p{color:var(--muted);line-height:1.6}
+footer{padding:38px 0;color:#98a2b3;font-size:13px;border-top:1px solid var(--line)}
+@media(max-width:820px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding-top:45px}.grid3,.steps{grid-template-columns:1fr}h1{letter-spacing:-2.5px}.mock{transform:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav>
+<a class="brand" href="#">Study<span>Sprint</span></a>
+<div class="navlinks"><a href="#features">Features</a><a href="#how">How it works</a><a href="#faq">FAQ</a></div>
+<a class="navcta" href="#buy">Get it</a>
+</nav>
+</div>
+
+<main>
+<section class="hero wrap">
+<div>
+<span class="kicker">THE STUDENT SYSTEM • V2</span>
+<h1>Study smarter. Stop guessing what to do next.</h1>
+<p>StudySprint gives you a simple system for planning revision, practising weak topics and using AI to learn — without turning studying into a complicated project.</p>
+<div class="price">AED 39 <small>one-time purchase</small></div>
+<div class="actions"><a class="primary" href="#buy">Get StudySprint →</a><a class="secondary" href="#features">See what's inside</a></div>
+</div>
+<div class="mock">
+<div class="mockbar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+<div class="sheet"><h3>This week's sprint</h3>
+<div class="check"><span>Math — 15 practice questions</span><span class="pill">45 min</span></div>
+<div class="check"><span>Chemistry — review weak topic</span><span class="pill">30 min</span></div>
+<div class="check"><span>English — active recall</span><span class="pill">25 min</span></div>
+<div class="check"><span>Weekly review</span><span class="pill">10 min</span></div>
+</div></div>
+</section>
+
+<section id="features" class="wrap">
+<h2>Everything you need to run a better study week.</h2>
+<p class="sectionlead">No complicated productivity system. Just practical templates and prompts that help you decide what to study and how to practise it.</p>
+<div class="grid3">
+<div class="card"><div class="icon">📅</div><h3>Weekly planning</h3><p>Turn a messy list of subjects into specific study sessions you can actually finish.</p></div>
+<div class="card"><div class="icon">🤖</div><h3>AI prompt library</h3><p>Use ready-made prompts for explanations, quizzes, flashcards, mock exams and mistake review.</p></div>
+<div class="card"><div class="icon">🎯</div><h3>Exam countdown</h3><p>Prioritise the topics that matter most instead of randomly revising whatever feels easy.</p></div>
+<div class="card"><div class="icon">🧠</div><h3>Active recall</h3><p>Build practice into your routine so you're testing what you know, not just rereading it.</p></div>
+<div class="card"><div class="icon">📈</div><h3>Progress tracker</h3><p>Track confidence, test scores and the next action for each week.</p></div>
+<div class="card"><div class="icon">🔁</div><h3>Weekly review</h3><p>Spot repeated mistakes and adjust next week's plan instead of starting over.</p></div>
+</div>
+</section>
+
+<section id="how" class="dark">
+<div class="wrap">
+<h2>One simple loop.</h2><p class="sectionlead">Plan the work. Do the work. Test yourself. Improve the next plan.</p>
+<div class="steps">
+<div class="step"><div class="num">01</div><h3>Plan</h3><p>Choose your highest-priority topics.</p></div>
+<div class="step"><div class="num">02</div><h3>Learn</h3><p>Use class materials and clear explanations.</p></div>
+<div class="step"><div class="num">03</div><h3>Practise</h3><p>Quiz yourself and find your mistakes.</p></div>
+<div class="step"><div class="num">04</div><h3>Review</h3><p>Use your results to plan the next week.</p></div>
+</div>
+</div>
+</section>
+
+<section id="buy" class="wrap">
+<div style="text-align:center">
+<h2>Start your next study sprint.</h2><p class="sectionlead" style="margin:auto">A focused student system you can use again and again.</p>
+<div class="pricebox">
+<div style="color:#635bff;font-weight:850">STUDYSPRINT STUDENT SYSTEM</div>
+<div class="pricebig">AED 39</div>
+<ul style="text-align:left">
+<li>30-day goal system</li><li>Weekly planner + daily focus card</li><li>Exam countdown + priority framework</li><li>AI study prompt library</li><li>Progress tracker + weekly review</li>
+</ul>
+<a class="primary" style="display:block;text-align:center;margin-top:22px" href="StudySprint_Student_System_v2.pdf">Download demo product →</a>
+<p style="font-size:11px;color:#98a2b3;margin-top:14px">Demo checkout. Connect an approved payment provider before taking payments.</p>
+</div>
+</div>
+</section>
+
+<section id="faq" class="wrap">
+<h2>FAQ</h2>
+<div class="faq">
+<details><summary>Is StudySprint an app?</summary><p>Not yet. V2 is a digital study system delivered as a printable/downloadable resource. A future version could become a web app.</p></details>
+<details><summary>Can I use AI with it?</summary><p>Yes. The included prompts are designed to help you explain topics, practise, generate flashcards and review mistakes. Always verify important information.</p></details>
+<details><summary>Do I need to be good at studying already?</summary><p>No. The system is designed to give you a clear starting point and a repeatable weekly routine.</p></details>
+<details><summary>Can I get a refund?</summary><p>For the public version, add your actual refund policy before accepting payments. This demo does not process payments.</p></details>
+</div>
+</section>
+</main>
+
+<div class="wrap"><footer>© 2026 StudySprint. Student productivity tools, designed simply.</footer></div>
+</body></html>
